@@ -19,7 +19,7 @@ object MwegrzHttpServerAppPlugin extends MwegrzHttpServerAppPlugin
 trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
   override def requires: Plugins = super.requires && SbtNativePackager && JavaServerAppPackaging && DockerPlugin && RevolverPlugin
 
-  override lazy val projectSettings: Seq[Setting[_]] = super.projectSettings ++ Seq(
+  override def projectSettings: Seq[Setting[_]] = super.projectSettings ++ Seq(
     libraryDependencies ++= Seq(
       ScalaApp,
       AkkaActor,
