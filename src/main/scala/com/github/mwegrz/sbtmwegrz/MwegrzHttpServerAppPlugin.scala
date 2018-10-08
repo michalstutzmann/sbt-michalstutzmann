@@ -25,6 +25,9 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
       AkkaActor,
       AkkaStream,
       AkkaPersistence,
+      AkkaPersistenceQuery,
+      AkkaCluster,
+      AkkaClusterTools,
       AkkaPersistenceCassandra,
       AkkaPersistenceCassandraLauncher % "test,it",
       AkkaSlf4j,
@@ -37,7 +40,6 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
       CirceGeneric,
       CirceGenericExtras,
       CirceParser,
-      CirceJava8,
       Avro4sCore,
       KebsAvro
     ),

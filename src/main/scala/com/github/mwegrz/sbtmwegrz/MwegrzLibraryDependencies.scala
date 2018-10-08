@@ -10,6 +10,7 @@ trait MwegrzLibraryDependencies {
     lazy val ThreetenExtra: String  = "1.4"
     lazy val Akka: String  = "2.5.17"
     lazy val AkkaHttp: String  = "10.1.5"
+    lazy val AkkaPersistenceCassandra: String = "0.90"
     lazy val AkkaHttpJson: String  = "1.22.0"
     lazy val Alpakka: String  = "1.0-M1"
     lazy val Slf4j: String  = "1.7.25"
@@ -22,24 +23,23 @@ trait MwegrzLibraryDependencies {
     lazy val Config: String  = "1.3.3"
     lazy val BcpkixJdk15on: String  = "1.60"
     lazy val BouncyCastle: String  = BcpkixJdk15on
-    lazy val Circe: String  = "0.9.3"
-    lazy val JwtCirce: String  = "0.16.0"
+    lazy val Circe: String  = "0.10.0"
+    lazy val JwtCirce: String  = "0.18.0"
     lazy val ScodecCore: String  = "1.10.3"
     lazy val ScodecBits = "1.1.5"
-    lazy val Avro4s: String  = "1.9.0"
-    lazy val Kebs: String  = "1.6.1"
-    lazy val Cats: String = "1.1.0"
-    lazy val AkkaPersistenceCassandra: String = "0.83"
+    lazy val Avro4s: String  = "2.0.1"
+    lazy val Kebs: String  = "1.6.2"
+    lazy val Cats: String = "1.4.0"
     lazy val Scalactic: String = ScalaTest
     lazy val ScalaApp: String = "0.1.9"
     lazy val CommonsVfs2: String = "2.1"
     lazy val CommonsPool: String = "1.6"
-    lazy val AkkaStreamKafka: String = "0.19"
-    lazy val CassandraDriver: String = "3.5.0"
+    lazy val AkkaStreamKafka: String = "0.22"
+    lazy val CassandraDriver: String = "3.6.0"
     lazy val NetemeraScalaClient: String = "0.3.39-SNAPSHOT"
-    lazy val Time4J: String = "4.27.2"
+    lazy val Time4J: String = "4.38"
     lazy val Kamon: String = "1.1.0"
-    lazy val Pulsar4S: String = "2.0.0"
+    lazy val Pulsar4S: String = "2.1.1"
     lazy val Ficus: String = "1.4.3"
     lazy val JBcrypt: String = "0.3m"
     lazy val JavaJwt: String = "3.3.0"
@@ -55,25 +55,26 @@ trait MwegrzLibraryDependencies {
   lazy val AkkaActor: ModuleID = "com.typesafe.akka" %% "akka-actor" % Versions.Akka
   lazy val AkkaTestkit: ModuleID = "com.typesafe.akka" %% "akka-testkit" % Versions.Akka
   lazy val AkkaStream: ModuleID = "com.typesafe.akka" %% "akka-stream" % Versions.Akka
+  lazy val AkkaRemote: ModuleID = "com.typesafe.akka" %% "akka-remote" % Versions.Akka
+  lazy val AkkaCluster: ModuleID = "com.typesafe.akka" %% "akka-cluster" % Versions.Akka
+  lazy val AkkaClusterTools: ModuleID = "com.typesafe.akka" %% "akka-cluster-tools" % Versions.Akka
   lazy val AkkaPersistence: ModuleID = "com.typesafe.akka" %% "akka-persistence" % Versions.Akka
+  lazy val AkkaPersistenceQuery: ModuleID = "com.typesafe.akka" %% "akka-persistence-query" % Versions.Akka
   lazy val AkkaPersistenceCassandra: ModuleID = "com.typesafe.akka" %% "akka-persistence-cassandra" % Versions.AkkaPersistenceCassandra
   lazy val AkkaPersistenceCassandraLauncher: ModuleID = "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % Versions.AkkaPersistenceCassandra
   lazy val AkkaSlf4j: ModuleID = "com.typesafe.akka" %% "akka-slf4j" % Versions.Akka
-  lazy val AkkaAll: Seq[ModuleID] = Seq(AkkaActor, AkkaStream, AkkaPersistence, AkkaPersistenceCassandra, AkkaSlf4j)
 
   // Akka HTTP
   lazy val AkkaHttp: ModuleID = "com.typesafe.akka" %% "akka-http" % Versions.AkkaHttp
   lazy val AkkaHttpTestkit: ModuleID = "com.typesafe.akka" %% "akka-http-testkit" % Versions.AkkaHttp
   lazy val AkkaHttpCirce: ModuleID = "de.heikoseeberger" %% "akka-http-circe" % Versions.AkkaHttpJson
   lazy val AkkaHttpAvro4s: ModuleID = "de.heikoseeberger" %% "akka-http-avro4s" % Versions.AkkaHttpJson
-  lazy val AkkaHttpAll: Seq[ModuleID] = Seq(AkkaHttp, AkkaHttpCirce, AkkaHttpAvro4s)
 
   // Alpakka
   lazy val AkkaStreamAlpakkaSse: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-sse" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaCassandra: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaMqtt: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaUdp: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-udp" % Versions.Alpakka
-  lazy val AlpakkaAll: Seq[ModuleID] = Seq(AkkaStreamAlpakkaSse, AkkaStreamAlpakkaCassandra, AkkaStreamAlpakkaMqtt)
 
   lazy val ScalaTest: ModuleID = "org.scalatest" %% "scalatest" % Versions.ScalaTest
   lazy val Scalactic: ModuleID = "org.scalactic" %% "scalactic" % Versions.Scalactic
