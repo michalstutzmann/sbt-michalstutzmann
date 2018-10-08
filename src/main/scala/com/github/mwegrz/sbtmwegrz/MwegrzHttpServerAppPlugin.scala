@@ -24,6 +24,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
       ScalaApp,
       AkkaActor,
       AkkaStream,
+      AkkaStreamTestKit,
       AkkaPersistence,
       AkkaPersistenceQuery,
       AkkaCluster,
