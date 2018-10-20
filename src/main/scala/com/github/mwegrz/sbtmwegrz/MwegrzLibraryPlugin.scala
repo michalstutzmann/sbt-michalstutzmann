@@ -38,7 +38,8 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
       )
     ),
 
-    scalacOptions in ThisBuild ++= Seq("-feature"),
+    scalacOptions in ThisBuild ++= Seq("-feature", "-deprecation"),
+
     scalaVersion := MwegrzLibraryDependencies.Versions.Scala,
     addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
 

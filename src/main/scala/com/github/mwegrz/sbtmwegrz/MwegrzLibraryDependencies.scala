@@ -7,6 +7,7 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 trait MwegrzLibraryDependencies {
   object Versions {
     lazy val Scala: String = "2.12.7"
+    lazy val ScalaCollectionCompat = "0.2.1"
     lazy val ThreetenExtra: String  = "1.4"
     lazy val Akka: String  = "2.5.17"
     lazy val AkkaHttp: String  = "10.1.5"
@@ -49,6 +50,8 @@ trait MwegrzLibraryDependencies {
     lazy val Slick: String = "3.2.3"
   }
 
+  //"scala-parallel-collections" % Versions.Scala
+  lazy val ScalaCollectionCompat: ModuleID = "org.scala-lang.modules" %% "scala-collection-compat" % Versions.ScalaCollectionCompat
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
 
   // Akka
