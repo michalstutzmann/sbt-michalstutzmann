@@ -6,12 +6,13 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 
 trait MwegrzLibraryDependencies {
   object Versions {
-    lazy val Scala: String = "2.12.7"
+    lazy val Scala: String = "2.12.8"
     lazy val ScalaCollectionCompat = "0.2.1"
     lazy val ThreetenExtra: String  = "1.4"
-    lazy val Akka: String  = "2.5.17"
+    lazy val Akka: String  = "2.5.19"
     lazy val AkkaHttp: String  = "10.1.5"
-    lazy val AkkaPersistenceCassandra: String = "0.90"
+    lazy val AkkaPersistenceCassandra: String = "0.91"
+
     lazy val AkkaHttpJson: String  = "1.22.0"
     lazy val Alpakka: String  = "1.0-M1"
     lazy val Slf4j: String  = "1.7.25"
@@ -19,16 +20,16 @@ trait MwegrzLibraryDependencies {
     lazy val ScalaTest: String  = "3.0.5"
     lazy val ScalaCheck: String  = "1.13.5"
     lazy val LogbackHocon: String  = "0.1.6"
-    lazy val ScalaStructlog: String  = "0.1.7"
+    lazy val ScalaStructlog: String  = "0.1.9"
     lazy val ScalaUtil: String  = "0.1.41-SNAPSHOT"
     lazy val Config: String  = "1.3.3"
     lazy val BcpkixJdk15on: String  = "1.60"
     lazy val BouncyCastle: String  = BcpkixJdk15on
-    lazy val Circe: String  = "0.10.0"
+    lazy val Circe: String  = "0.10.1"
     lazy val JwtCirce: String  = "0.18.0"
     lazy val ScodecCore: String  = "1.10.3"
     lazy val ScodecBits = "1.1.5"
-    lazy val Avro4s: String  = "2.0.1"
+    lazy val Avro4s: String  = "2.0.2"
     lazy val Kebs: String  = "1.6.2"
     lazy val Cats: String = "1.4.0"
     lazy val Scalactic: String = ScalaTest
@@ -71,6 +72,7 @@ trait MwegrzLibraryDependencies {
   // Akka HTTP
   lazy val AkkaHttp: ModuleID = "com.typesafe.akka" %% "akka-http" % Versions.AkkaHttp
   lazy val AkkaHttpTestkit: ModuleID = "com.typesafe.akka" %% "akka-http-testkit" % Versions.AkkaHttp
+  lazy val AkkaHttp2Support: ModuleID = "com.typesafe.akka" %% "akka-http2-support" % Versions.AkkaHttp
   lazy val AkkaHttpCirce: ModuleID = "de.heikoseeberger" %% "akka-http-circe" % Versions.AkkaHttpJson
   lazy val AkkaHttpAvro4s: ModuleID = "de.heikoseeberger" %% "akka-http-avro4s" % Versions.AkkaHttpJson
 

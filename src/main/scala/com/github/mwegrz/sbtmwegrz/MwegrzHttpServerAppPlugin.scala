@@ -33,6 +33,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
       AkkaPersistenceCassandraLauncher % "test,it",
       AkkaSlf4j,
       AkkaHttp,
+      AkkaHttp2Support,
       AkkaHttpTestkit % "test,it",
       AkkaHttpCirce,
       AkkaHttpAvro4s,
@@ -52,7 +53,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
     packageDescription := name.value,
     topLevelDirectory := None,
 
-    dockerBaseImage := "mwegrz/docker-java-jre:1.0.0",
+    dockerBaseImage := "mwegrz/docker-java-jre:1.0.1",
     dockerUpdateLatest := true,
     dockerAlias := DockerAlias(
       dockerRepository.value,
