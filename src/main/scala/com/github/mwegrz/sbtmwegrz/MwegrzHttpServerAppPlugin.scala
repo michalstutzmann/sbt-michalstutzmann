@@ -11,13 +11,14 @@ import spray.revolver.RevolverPlugin
 import spray.revolver.RevolverPlugin.autoImport._
 import com.typesafe.sbt.packager.universal.UniversalPlugin.autoImport._
 import com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies._
+import net.virtualvoid.sbt.graph.DependencyGraphPlugin
 
 import scala.language.implicitConversions
 
 object MwegrzHttpServerAppPlugin extends MwegrzHttpServerAppPlugin
 
 trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
-  override def requires: Plugins = super.requires && SbtNativePackager && JavaServerAppPackaging && DockerPlugin && RevolverPlugin
+  override def requires: Plugins = super.requires && SbtNativePackager && JavaServerAppPackaging && DockerPlugin && RevolverPlugin && DependencyGraphPlugin
 
   override def projectSettings: Seq[Setting[_]] = super.projectSettings ++ Seq(
     libraryDependencies ++= Seq(

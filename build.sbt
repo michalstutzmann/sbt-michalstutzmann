@@ -24,7 +24,8 @@ lazy val root = (project in file(".")).
     addSbtPlugin("io.spray" %% "sbt-revolver" % "0.9.1"),
     addSbtPlugin("com.jsuereth" %% "sbt-pgp" % "1.1.1"),
     addSbtPlugin("org.xerial.sbt" %% "sbt-sonatype" % "2.3"),
-    addSbtPlugin("com.github.cb372" % "sbt-explicit-dependencies" % "0.2.6"),
+    addSbtPlugin("net.virtual-void" %% "sbt-dependency-graph" % "0.9.2"),
+    addSbtPlugin("com.github.cb372" %% "sbt-explicit-dependencies" % "0.2.6"),
     // Release settings
     releaseTagName := { (version in ThisBuild).value },
     releaseTagComment := s"Release version ${(version in ThisBuild).value}",

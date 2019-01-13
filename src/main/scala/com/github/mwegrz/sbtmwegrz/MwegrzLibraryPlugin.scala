@@ -13,6 +13,7 @@ import sbt.{Setting, _}
 import sbtrelease.ReleasePlugin
 import sbtrelease.ReleasePlugin.autoImport._
 import ReleaseTransformations._
+import net.virtualvoid.sbt.graph.DependencyGraphPlugin
 
 import scala.language.implicitConversions
 
@@ -20,7 +21,7 @@ object MwegrzLibraryPlugin extends MwegrzLibraryPlugin
 
 trait MwegrzLibraryPlugin extends AutoPlugin {
   override def requires: Plugins = ScalafmtPlugin && ScalastylePlugin && LogbackPlugin && ReleasePlugin &&
-    GitVersioning
+    GitVersioning && DependencyGraphPlugin
 
   override def trigger: PluginTrigger = noTrigger
 
