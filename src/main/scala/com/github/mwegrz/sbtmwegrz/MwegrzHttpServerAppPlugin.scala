@@ -54,7 +54,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
     packageDescription := name.value,
     topLevelDirectory := None,
 
-    dockerBaseImage := "mwegrz/docker-java-jre:1.0.1",
+    dockerBaseImage := "mwegrz/docker-java-jre:1.1.0",
     dockerUpdateLatest := true,
     dockerAlias := DockerAlias(
       dockerRepository.value,
