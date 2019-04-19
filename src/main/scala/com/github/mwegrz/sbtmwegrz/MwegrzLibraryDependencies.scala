@@ -9,8 +9,8 @@ trait MwegrzLibraryDependencies {
     lazy val Scala: String = "2.12.8"
     lazy val ScalaCollectionCompat = "0.2.1"
     lazy val ThreetenExtra: String  = "1.4"
-    lazy val Akka: String  = "2.5.21"
-    lazy val AkkaHttp: String  = "10.1.7"
+    lazy val Akka: String  = "2.5.22"
+    lazy val AkkaHttp: String  = "10.1.8"
     lazy val AkkaPersistenceCassandra: String = "0.93"
 
     lazy val AkkaHttpJson: String  = "1.23.0"
@@ -21,7 +21,7 @@ trait MwegrzLibraryDependencies {
     lazy val ScalaCheck: String  = "1.14.0"
     lazy val LogbackHocon: String  = "0.1.6"
     lazy val ScalaStructlog: String  = "0.1.9"
-    lazy val ScalaUtil: String  = "0.1.41"
+    lazy val ScalaUtil: String  = "0.1.42"
     lazy val Config: String  = "1.3.3"
     lazy val BcpkixJdk15on: String  = "1.61"
     lazy val BouncyCastle: String  = BcpkixJdk15on
