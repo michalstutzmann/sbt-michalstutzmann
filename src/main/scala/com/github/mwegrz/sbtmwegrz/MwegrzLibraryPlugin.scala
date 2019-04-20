@@ -49,7 +49,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
     slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
     logbackVersion := MwegrzLibraryDependencies.Versions.Logback,
 
-    resolvers += "Sonatype Maven Snapshots" at "https://oss.sonatype.org/content/repositories/releases",
+    resolvers += Opts.resolver.sonatypeStaging,
 
     libraryDependencies ++= Seq(
       ThreetenExtra,
