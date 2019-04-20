@@ -49,8 +49,6 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
     slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
     logbackVersion := MwegrzLibraryDependencies.Versions.Logback,
 
-    resolvers += Opts.resolver.sonatypeStaging,
-
     libraryDependencies ++= Seq(
       ThreetenExtra,
       ScalaTest % "test,it",
