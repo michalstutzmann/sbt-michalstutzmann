@@ -2,8 +2,6 @@ package com.github.mwegrz.sbtmwegrz
 
 import com.github.mwegrz.sbtlogback.LogbackPlugin
 import com.github.mwegrz.sbtlogback.LogbackPlugin.autoImport._
-import com.lucidchart.sbt.scalafmt.ScalafmtCorePlugin.autoImport._
-import com.lucidchart.sbt.scalafmt.ScalafmtPlugin
 import com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies._
 import com.typesafe.sbt.GitPlugin.autoImport.git
 import com.typesafe.sbt.GitVersioning
@@ -14,6 +12,8 @@ import sbtrelease.ReleasePlugin
 import sbtrelease.ReleasePlugin.autoImport._
 import ReleaseTransformations._
 import net.virtualvoid.sbt.graph.DependencyGraphPlugin
+import org.scalafmt.sbt.ScalafmtPlugin.autoImport._
+import org.scalafmt.sbt.ScalafmtPlugin
 
 import scala.language.implicitConversions
 
