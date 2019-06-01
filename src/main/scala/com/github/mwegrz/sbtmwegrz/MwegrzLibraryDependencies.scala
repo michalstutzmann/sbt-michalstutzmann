@@ -8,47 +8,47 @@ trait MwegrzLibraryDependencies {
   object Versions {
     lazy val Scala: String = "2.12.8"
     lazy val ScalaCollectionCompat = "0.2.1"
-    lazy val ThreetenExtra: String  = "1.4"
-    lazy val Akka: String  = "2.5.22"
+    lazy val ThreetenExtra: String  = "1.5.0"
+    lazy val Akka: String  = "2.5.23"
     lazy val AkkaHttp: String  = "10.1.8"
-    lazy val AkkaPersistenceCassandra: String = "0.93"
+    lazy val AkkaPersistenceCassandra: String = "0.98"
 
     lazy val AkkaHttpJson: String  = "1.23.0"
-    lazy val Alpakka: String  = "1.0.0"
+    lazy val Alpakka: String  = "1.0.2"
     lazy val Slf4j: String  = "1.7.25"
     lazy val Logback: String  = "1.2.3"
     lazy val ScalaTest: String  = "3.0.5"
     lazy val ScalaCheck: String  = "1.14.0"
     lazy val LogbackHocon: String  = "0.1.6"
     lazy val ScalaStructlog: String  = "0.1.9"
-    lazy val ScalaUtil: String  = "0.1.45"
-    lazy val Config: String  = "1.3.3"
+    lazy val ScalaUtil: String  = "0.1.46"
+    lazy val Config: String  = "1.3.4"
     lazy val BcpkixJdk15on: String  = "1.61"
     lazy val BouncyCastle: String  = BcpkixJdk15on
     lazy val Circe: String  = "0.11.1"
     lazy val JwtCirce: String  = "2.1.0"
     lazy val ScodecCore: String  = "1.11.3"
-    lazy val ScodecBits = "1.1.9"
-    lazy val Avro4s: String  = "2.0.4"
+    lazy val ScodecBits = "1.1.11"
+    lazy val Avro4s: String  = "3.0.0-RC2"
     lazy val Kebs: String  = "1.6.2"
     lazy val Cats: String = "1.6.0"
     lazy val Scalactic: String = ScalaTest
     lazy val ScalaApp: String = "0.1.10"
     lazy val CommonsVfs2: String = "2.1"
     lazy val CommonsPool: String = "1.6"
-    lazy val AlpakkaKafka: String = "1.0.1"
-    lazy val CassandraDriver: String = "3.6.0"
+    lazy val AlpakkaKafka: String = "1.0.3"
+    lazy val CassandraDriver: String = "4.0.1"
     lazy val NetemeraScalaClient: String = "0.3.39"
     lazy val Time4J: String = "4.38"
-    lazy val Kamon: String = "1.1.4"
-    lazy val Pulsar4S: String = "2.2.0"
-    lazy val Ficus: String = "1.4.3"
-    lazy val JBcrypt: String = "0.3m"
-    lazy val JavaJwt: String = "3.3.0"
-    lazy val GoogleMapsServices: String = "0.2.9"
-    lazy val BetterFiles: String = "3.6.0"
+    lazy val Kamon: String = "1.1.6"
+    lazy val Pulsar4S: String = "2.3.0"
+    lazy val Ficus: String = "1.4.4"
+    lazy val JBcrypt: String = "0.4"
+    lazy val JavaJwt: String = "3.8.1"
+    lazy val GoogleMapsServices: String = "0.9.3"
+    lazy val BetterFiles: String = "3.8.0"
     lazy val Geodesy: String = "1.1.3"
-    lazy val Slick: String = "3.2.3"
+    lazy val Slick: String = "3.3.0"
   }
 
   //"scala-parallel-collections" % Versions.Scala
@@ -111,8 +111,7 @@ trait MwegrzLibraryDependencies {
   lazy val ScodecCore: ModuleID = "org.scodec" %% "scodec-core" % Versions.ScodecCore
   lazy val ScodecBits: ModuleID = "org.scodec" %% "scodec-bits" % Versions.ScodecBits
   lazy val KebsAvro: ModuleID = "pl.iterators" %% "kebs-avro" % Versions.Kebs
-  lazy val CassandraDriverCore: ModuleID = "com.datastax.cassandra" % "cassandra-driver-core" % Versions.CassandraDriver
-  lazy val CassandraDriverExtras: ModuleID = "com.datastax.cassandra" % "cassandra-driver-extras" % Versions.CassandraDriver
+  lazy val CassandraDriverCore: ModuleID = "com.datastax.oss" % "java-driver-core" % Versions.CassandraDriver
 
   lazy val AlpakkaKafka: ModuleID = "com.typesafe.akka" %% "akka-stream-kafka" % Versions.AlpakkaKafka
   lazy val CommonsVfs2: ModuleID = "org.apache.commons" % "commons-vfs2" % Versions.CommonsVfs2
