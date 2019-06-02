@@ -8,7 +8,7 @@ object MwegrzPlugin extends MwegrzPlugin
 
 trait MwegrzPlugin extends AutoPlugin {
   object autoImport {
-    lazy val MwegrzLibraryDependencies: com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies.type = com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies
+    lazy val MwegrzLibraryDependencies: com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies.type =
+      com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies
   }
 }
-

@@ -1,7 +1,7 @@
 package com.github.mwegrz.sbtmwegrz
 
 import sbt.Keys._
-import sbt.{Setting, _}
+import sbt.{ Setting, _ }
 import sbtrelease.ReleasePlugin.autoImport._
 import ReleaseTransformations._
 import com.typesafe.sbt.pgp.PgpKeys
@@ -33,7 +33,9 @@ trait MwegrzApache2LibraryPlugin extends MwegrzLibraryPlugin {
       else
         Opts.resolver.sonatypeStaging
     ),
-    licenses := Seq("Apache License, Version 2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0.html")),
+    licenses := Seq(
+      "Apache License, Version 2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0.html")
+    ),
     homepage := None,
     scmInfo := None
   )
