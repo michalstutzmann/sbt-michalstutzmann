@@ -36,6 +36,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
         AkkaPersistenceCassandraLauncher % "test,it",
         AkkaSlf4j,
         AkkaHttp,
+        AkkaHttpCors,
         AkkaHttp2Support,
         AkkaHttpTestkit % "test,it",
         AkkaHttpCirce,
