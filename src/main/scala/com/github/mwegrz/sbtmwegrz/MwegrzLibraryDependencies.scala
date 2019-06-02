@@ -38,7 +38,7 @@ trait MwegrzLibraryDependencies {
     lazy val CommonsPool: String = "1.6"
     lazy val AlpakkaKafka: String = "1.0.3"
     lazy val CassandraDriver: String = "4.0.1"
-    lazy val NetemeraScalaClient: String = "0.3.39"
+    lazy val NetemeraScalaClient: String = "0.3.40"
     lazy val Time4J: String = "4.38"
     lazy val Kamon: String = "1.1.6"
     lazy val Pulsar4S: String = "2.3.0"
