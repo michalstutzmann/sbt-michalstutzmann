@@ -33,6 +33,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
         AkkaCluster,
         AkkaClusterTools,
         AkkaPersistenceCassandra,
+        "com.google.guava" % "guava" % "19.0" force (), // Temporary measure, until Akka Persistence Cassandra is fixed
         AkkaPersistenceCassandraLauncher % "test,it",
         AkkaSlf4j,
         AkkaHttp,
