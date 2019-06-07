@@ -22,7 +22,7 @@ trait MwegrzLibraryDependencies {
     lazy val ScalaCheck: String = "1.14.0"
     lazy val LogbackHocon: String = "0.1.6"
     lazy val ScalaStructlog: String = "0.1.9"
-    lazy val ScalaUtil: String = "0.1.50"
+    lazy val ScalaUtil: String = "0.1.51"
     lazy val Config: String = "1.3.4"
     lazy val BcpkixJdk15on: String = "1.61"
     lazy val BouncyCastle: String = BcpkixJdk15on
@@ -39,7 +39,7 @@ trait MwegrzLibraryDependencies {
     lazy val CommonsPool: String = "1.6"
     lazy val AlpakkaKafka: String = "1.0.3"
     lazy val CassandraDriver: String = "4.0.1"
-    lazy val NetemeraScalaClient: String = "0.3.42"
+    lazy val NetemeraScalaClient: String = "0.3.43"
     lazy val Time4J: String = "4.38"
     lazy val Kamon: String = "1.1.6"
     lazy val Pulsar4S: String = "2.3.0"

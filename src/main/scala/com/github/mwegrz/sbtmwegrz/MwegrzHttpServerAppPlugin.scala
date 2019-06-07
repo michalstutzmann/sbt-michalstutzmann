@@ -33,7 +33,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
         AkkaCluster,
         AkkaClusterTools,
         AkkaPersistenceCassandra,
-        "com.google.guava" % "guava" % "19.0" force (), // Temporary measure, until Akka Persistence Cassandra is fixed
+        "com.google.guava" % "guava" % "19.0" force (),
         AkkaPersistenceCassandraLauncher % "test,it",
         AkkaSlf4j,
         AkkaHttp,
@@ -55,7 +55,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
       packageSummary := name.value,
       packageDescription := name.value,
       topLevelDirectory := None,
-      dockerBaseImage := "azul/zulu-openjdk-alpine:8u212-jre",
+      dockerBaseImage := "mwegrz/docker-java-jre:2.0.1",
       dockerUpdateLatest := true,
       dockerAlias := DockerAlias(
         dockerRepository.value,
