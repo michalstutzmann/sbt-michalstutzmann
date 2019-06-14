@@ -57,14 +57,12 @@ trait MwegrzLibraryDependencies {
   lazy val AkkaActor: ModuleID = "com.typesafe.akka" %% "akka-actor" % Versions.Akka
   lazy val AkkaTestkit: ModuleID = "com.typesafe.akka" %% "akka-testkit" % Versions.Akka
   lazy val AkkaStream: ModuleID = "com.typesafe.akka" %% "akka-stream" % Versions.Akka
-  lazy val AkkaStreamTestKit
-      : ModuleID = "com.typesafe.akka" %% "akka-stream-testkit" % Versions.Akka
+  lazy val AkkaStreamTestKit: ModuleID = "com.typesafe.akka" %% "akka-stream-testkit" % Versions.Akka
   lazy val AkkaRemote: ModuleID = "com.typesafe.akka" %% "akka-remote" % Versions.Akka
   lazy val AkkaCluster: ModuleID = "com.typesafe.akka" %% "akka-cluster" % Versions.Akka
   lazy val AkkaClusterTools: ModuleID = "com.typesafe.akka" %% "akka-cluster-tools" % Versions.Akka
   lazy val AkkaPersistence: ModuleID = "com.typesafe.akka" %% "akka-persistence" % Versions.Akka
-  lazy val AkkaPersistenceQuery
-      : ModuleID = "com.typesafe.akka" %% "akka-persistence-query" % Versions.Akka
+  lazy val AkkaPersistenceQuery: ModuleID = "com.typesafe.akka" %% "akka-persistence-query" % Versions.Akka
   lazy val AkkaPersistenceCassandra
       : ModuleID = "com.typesafe.akka" %% "akka-persistence-cassandra" % Versions.AkkaPersistenceCassandra
   lazy val AkkaPersistenceCassandraLauncher
@@ -73,33 +71,26 @@ trait MwegrzLibraryDependencies {
 
   // Akka HTTP
   lazy val AkkaHttp: ModuleID = "com.typesafe.akka" %% "akka-http" % Versions.AkkaHttp
-  lazy val AkkaHttpTestkit
-      : ModuleID = "com.typesafe.akka" %% "akka-http-testkit" % Versions.AkkaHttp
-  lazy val AkkaHttp2Support
-      : ModuleID = "com.typesafe.akka" %% "akka-http2-support" % Versions.AkkaHttp
+  lazy val AkkaHttpTestkit: ModuleID = "com.typesafe.akka" %% "akka-http-testkit" % Versions.AkkaHttp
+  lazy val AkkaHttp2Support: ModuleID = "com.typesafe.akka" %% "akka-http2-support" % Versions.AkkaHttp
   lazy val AkkaHttpCors: ModuleID = "ch.megard" %% "akka-http-cors" % Versions.AkkaHttpCors
-  lazy val AkkaHttpCirce
-      : ModuleID = "de.heikoseeberger" %% "akka-http-circe" % Versions.AkkaHttpJson
-  lazy val AkkaHttpAvro4s
-      : ModuleID = "de.heikoseeberger" %% "akka-http-avro4s" % Versions.AkkaHttpJson
+  lazy val AkkaHttpCirce: ModuleID = "de.heikoseeberger" %% "akka-http-circe" % Versions.AkkaHttpJson
+  lazy val AkkaHttpAvro4s: ModuleID = "de.heikoseeberger" %% "akka-http-avro4s" % Versions.AkkaHttpJson
 
   // Alpakka
-  lazy val AkkaStreamAlpakkaSse
-      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-sse" % Versions.Alpakka
+  lazy val AkkaStreamAlpakkaSse: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-sse" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaCassandra
       : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaMqttStreaming
       : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % Versions.Alpakka
-  lazy val AkkaStreamAlpakkaUdp
-      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-udp" % Versions.Alpakka
+  lazy val AkkaStreamAlpakkaUdp: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-udp" % Versions.Alpakka
 
   lazy val ScalaTest: ModuleID = "org.scalatest" %% "scalatest" % Versions.ScalaTest
   lazy val Scalactic: ModuleID = "org.scalactic" %% "scalactic" % Versions.Scalactic
   lazy val ScalaCheck: ModuleID = "org.scalacheck" %% "scalacheck" % Versions.ScalaCheck
 
   lazy val LogbackHocon: ModuleID = "com.github.mwegrz" % "logback-hocon" % Versions.LogbackHocon
-  lazy val ScalaStructlog
-      : ModuleID = "com.github.mwegrz" %% "scala-structlog" % Versions.ScalaStructlog
+  lazy val ScalaStructlog: ModuleID = "com.github.mwegrz" %% "scala-structlog" % Versions.ScalaStructlog
 
   lazy val ScalaApp: ModuleID = "com.github.mwegrz" %% "scala-app" % Versions.ScalaApp
   lazy val ScalaUtil: ModuleID = "com.github.mwegrz" %% "scala-util" % Versions.ScalaUtil
@@ -123,23 +114,19 @@ trait MwegrzLibraryDependencies {
   lazy val BouncyCastle: ModuleID = BcpkixJdk15on
   lazy val ScodecCore: ModuleID = "org.scodec" %% "scodec-core" % Versions.ScodecCore
   lazy val ScodecBits: ModuleID = "org.scodec" %% "scodec-bits" % Versions.ScodecBits
-  lazy val CassandraDriverCore
-      : ModuleID = "com.datastax.oss" % "java-driver-core" % Versions.CassandraDriver
+  lazy val CassandraDriverCore: ModuleID = "com.datastax.oss" % "java-driver-core" % Versions.CassandraDriver
 
-  lazy val AlpakkaKafka
-      : ModuleID = "com.typesafe.akka" %% "akka-stream-kafka" % Versions.AlpakkaKafka
+  lazy val AlpakkaKafka: ModuleID = "com.typesafe.akka" %% "akka-stream-kafka" % Versions.AlpakkaKafka
   lazy val CommonsVfs2: ModuleID = "org.apache.commons" % "commons-vfs2" % Versions.CommonsVfs2
   lazy val CommonsPool: ModuleID = "commons-pool" % "commons-pool" % Versions.CommonsPool
-  lazy val NetemeraScalaClient
-      : ModuleID = "com.netemera" %% "netemera-scala-client" % Versions.NetemeraScalaClient
+  lazy val NetemeraScalaClient: ModuleID = "com.netemera" %% "netemera-scala-client" % Versions.NetemeraScalaClient
   lazy val Time4jCore: ModuleID = "net.time4j" % "time4j-core" % Versions.Time4J
   lazy val NettyTransportNativeEpoll
       : ModuleID = "io.netty" % "netty-transport-native-epoll" % "4.1.21.Final" // Cassandra asks for it
   lazy val HttpClient: ModuleID = "org.apache.httpcomponents" % "httpclient" % "4.5.5"
 
   lazy val JBcrypt: ModuleID = "org.mindrot" % "jbcrypt" % Versions.JBcrypt
-  lazy val GoogleMapsServices
-      : ModuleID = "com.google.maps" % "google-maps-services" % Versions.GoogleMapsServices
+  lazy val GoogleMapsServices: ModuleID = "com.google.maps" % "google-maps-services" % Versions.GoogleMapsServices
   lazy val BetterFiles: ModuleID = "com.github.pathikrit" %% "better-files" % Versions.BetterFiles
   lazy val Geodesy: ModuleID = "org.gavaghan" % "geodesy" % Versions.Geodesy
   lazy val Slick: ModuleID = "com.typesafe.slick" %% "slick" % Versions.Slick
