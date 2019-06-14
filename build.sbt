@@ -19,7 +19,7 @@ lazy val root = (project in file(".")).
     addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.0.1"),
     addSbtPlugin("org.scalastyle" % "scalastyle-sbt-plugin" % "1.0.0"),
     addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.11"),
-    addSbtPlugin("com.github.mwegrz" % "sbt-logback" % "0.1.7"),
+    addSbtPlugin("com.github.mwegrz" % "sbt-logback" % "0.1.8"),
     addSbtPlugin("com.typesafe.sbt" % "sbt-git" % "1.0.0"),
     addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.1"),
     addSbtPlugin("io.spray" % "sbt-revolver" % "0.9.1"),
