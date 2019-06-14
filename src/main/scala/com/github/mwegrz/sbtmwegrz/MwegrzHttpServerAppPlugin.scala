@@ -47,8 +47,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
         CirceGeneric,
         CirceGenericExtras,
         CirceParser,
-        Avro4sCore,
-        KebsAvro
+        Avro4sCore
       ),
       Revolver.enableDebugging(port = 5050, suspend = false),
       maintainer := "Michał Węgrzyn",
