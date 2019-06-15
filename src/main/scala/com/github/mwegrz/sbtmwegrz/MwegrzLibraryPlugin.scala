@@ -40,9 +40,14 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
           url = url("https://github.com/mwegrz")
         )
       ),
-      scalacOptions in ThisBuild ++= Seq("-feature", "-deprecation"),
       scalaVersion := MwegrzLibraryDependencies.Versions.Scala,
-      addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
+      crossScalaVersions := Seq(scalaVersion.value, "2.12.8"),
+      scalacOptions ++=
+        (CrossVersion.partialVersion(scalaVersion.value) match {
+          case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
+          case _ => Seq("-Yno-adapted-args", "-deprecation")
+        }),
+      //addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
       scalafmtOnCompile := true,
       slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
       logbackVersion := MwegrzLibraryDependencies.Versions.Logback,
@@ -55,15 +60,15 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
         Config,
         Ficus
       ),
+      releaseCrossBuild := true,
       releaseTagName := { (version in ThisBuild).value },
       releaseTagComment := s"Release version ${(version in ThisBuild).value}",
       releaseCommitMessage := s"Set version to ${(version in ThisBuild).value}",
-      releaseCrossBuild := true,
       releaseProcess := Seq[ReleaseStep](
         checkSnapshotDependencies,
         inquireVersions,
         runClean,
-        runTest,
+        releaseStepCommandAndRemaining("+test"),
         setReleaseVersion,
         commitReleaseVersion,
         tagRelease,

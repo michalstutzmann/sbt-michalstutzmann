@@ -6,7 +6,7 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 
 trait MwegrzLibraryDependencies {
   object Versions {
-    lazy val Scala: String = "2.12.8"
+    lazy val Scala: String = "2.13.0"
     lazy val ScalaCollectionCompat = "2.0.0"
     lazy val ThreetenExtra: String = "1.5.0"
     lazy val Akka: String = "2.5.23"
@@ -21,8 +21,8 @@ trait MwegrzLibraryDependencies {
     lazy val ScalaTest: String = "3.0.5"
     lazy val ScalaCheck: String = "1.14.0"
     lazy val LogbackHocon: String = "0.1.7"
-    lazy val ScalaStructlog: String = "0.1.10"
-    lazy val ScalaUtil: String = "0.1.52"
+    lazy val ScalaStructlog: String = "0.1.14"
+    lazy val ScalaUtil: String = "0.1.53"
     lazy val Config: String = "1.3.4"
     lazy val BcpkixJdk15on: String = "1.61"
     lazy val BouncyCastle: String = BcpkixJdk15on
@@ -33,12 +33,12 @@ trait MwegrzLibraryDependencies {
     lazy val Avro4s: String = "3.0.0-RC2"
     lazy val Cats: String = "1.6.0"
     lazy val Scalactic: String = ScalaTest
-    lazy val ScalaApp: String = "0.1.11"
+    lazy val ScalaApp: String = "0.1.12"
     lazy val CommonsVfs2: String = "2.1"
     lazy val CommonsPool: String = "1.6"
     lazy val AlpakkaKafka: String = "1.0.3"
     lazy val CassandraDriver: String = "4.0.1"
-    lazy val NetemeraScalaClient: String = "0.3.44"
+    lazy val NetemeraScalaClient: String = "0.3.45"
     lazy val Time4J: String = "4.38"
     lazy val Ficus: String = "1.4.6"
     lazy val JBcrypt: String = "0.4"
