@@ -41,7 +41,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
         )
       ),
       scalaVersion := MwegrzLibraryDependencies.Versions.Scala,
-      crossScalaVersions := Seq(scalaVersion.value, "2.12.8"),
+      //crossScalaVersions := Seq(scalaVersion.value, "2.12.8"),
       scalacOptions ++=
         (CrossVersion.partialVersion(scalaVersion.value) match {
           case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
@@ -59,7 +59,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
         ScalaStructlog,
         Config
       ),
-      releaseCrossBuild := true,
+      releaseCrossBuild := false,
       releaseTagName := { (version in ThisBuild).value },
       releaseTagComment := s"Release version ${(version in ThisBuild).value}",
       releaseCommitMessage := s"Set version to ${(version in ThisBuild).value}",
