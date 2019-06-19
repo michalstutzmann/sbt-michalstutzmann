@@ -6,19 +6,19 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 
 trait MwegrzLibraryDependencies {
   object Versions {
-    lazy val Scala: String = "2.13.0"
+    lazy val Scala: String = "2.12.8"
     lazy val ScalaCollectionCompat = "2.0.0"
     lazy val ThreetenExtra: String = "1.5.0"
     lazy val Akka: String = "2.5.23"
     lazy val AkkaHttp: String = "10.1.8"
-    lazy val AkkaHttpCors: String = "0.4.0"
+    lazy val AkkaHttpCors: String = "0.4.1"
     lazy val AkkaPersistenceCassandra: String = "0.98"
 
     lazy val AkkaHttpJson: String = "1.23.0"
     lazy val Alpakka: String = "1.0.2"
     lazy val Slf4j: String = "1.7.25"
     lazy val Logback: String = "1.2.3"
-    lazy val ScalaTest: String = "3.0.5"
+    lazy val ScalaTest: String = "3.0.8"
     lazy val ScalaCheck: String = "1.14.0"
     lazy val LogbackHocon: String = "0.1.7"
     lazy val ScalaStructlog: String = "0.1.14"
@@ -26,18 +26,19 @@ trait MwegrzLibraryDependencies {
     lazy val Config: String = "1.3.4"
     lazy val BcpkixJdk15on: String = "1.61"
     lazy val BouncyCastle: String = BcpkixJdk15on
-    lazy val Circe: String = "0.11.1"
-    lazy val JwtCirce: String = "2.1.0"
-    lazy val ScodecCore: String = "1.11.3"
-    lazy val ScodecBits = "1.1.11"
-    lazy val Avro4s: String = "3.0.0-RC2"
-    lazy val Cats: String = "1.6.0"
+    lazy val Circe: String = "0.12.0-M3"
+    lazy val JwtCirce: String = "3.0.0"
+    lazy val ScodecCore: String = "1.11.4"
+    lazy val ScodecBits = "1.1.12"
+    lazy val Avro4s: String = "2.0.4"
+    lazy val Cats: String = "2.0.0-M4"
     lazy val Scalactic: String = ScalaTest
     lazy val ScalaApp: String = "0.1.12"
     lazy val CommonsVfs2: String = "2.1"
     lazy val CommonsPool: String = "1.6"
-    lazy val AlpakkaKafka: String = "1.0.3"
-    lazy val CassandraDriver: String = "4.0.1"
+    lazy val AlpakkaKafka: String = "1.0.4"
+    lazy val CassandraDriverCore: String = "3.7.1"
+    lazy val CassandraDriverExtras: String = CassandraDriverCore
     lazy val NetemeraScalaClient: String = "0.3.45"
     lazy val Time4J: String = "4.38"
     lazy val Ficus: String = "1.4.6"
@@ -114,7 +115,10 @@ trait MwegrzLibraryDependencies {
   lazy val BouncyCastle: ModuleID = BcpkixJdk15on
   lazy val ScodecCore: ModuleID = "org.scodec" %% "scodec-core" % Versions.ScodecCore
   lazy val ScodecBits: ModuleID = "org.scodec" %% "scodec-bits" % Versions.ScodecBits
-  lazy val CassandraDriverCore: ModuleID = "com.datastax.oss" % "java-driver-core" % Versions.CassandraDriver
+  lazy val CassandraDriverCore
+      : ModuleID = "com.datastax.cassandra" % "cassandra-driver-core" % Versions.CassandraDriverCore
+  lazy val CassandraDriverExtras
+      : ModuleID = "com.datastax.cassandra" % "cassandra-driver-extras" % Versions.CassandraDriverExtras
 
   lazy val AlpakkaKafka: ModuleID = "com.typesafe.akka" %% "akka-stream-kafka" % Versions.AlpakkaKafka
   lazy val CommonsVfs2: ModuleID = "org.apache.commons" % "commons-vfs2" % Versions.CommonsVfs2

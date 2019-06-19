@@ -45,7 +45,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
       scalacOptions ++=
         (CrossVersion.partialVersion(scalaVersion.value) match {
           case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
-          case _ => Seq("-Yno-adapted-args", "-deprecation")
+          case _                       => Seq("-Yno-adapted-args", "-deprecation")
         }),
       //addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
       scalafmtOnCompile := true,
@@ -57,8 +57,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
         ScalaCheck % "test,it",
         LogbackHocon,
         ScalaStructlog,
-        Config,
-        Ficus
+        Config
       ),
       releaseCrossBuild := true,
       releaseTagName := { (version in ThisBuild).value },
