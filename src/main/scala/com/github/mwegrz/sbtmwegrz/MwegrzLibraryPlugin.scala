@@ -47,7 +47,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
           case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
           case _                       => Seq("-Yno-adapted-args", "-deprecation")
         }),
-      //addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
+      addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
       scalafmtOnCompile := true,
       slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
       logbackVersion := MwegrzLibraryDependencies.Versions.Logback,

@@ -14,7 +14,7 @@ trait MwegrzLibraryDependencies {
     lazy val AkkaHttpCors: String = "0.4.1"
     lazy val AkkaPersistenceCassandra: String = "0.98"
 
-    lazy val AkkaHttpJson: String = "1.23.0"
+    lazy val AkkaHttpJson: String = "1.26.0"
     lazy val Alpakka: String = "1.0.2"
     lazy val Slf4j: String = "1.7.25"
     lazy val Logback: String = "1.2.3"
@@ -22,16 +22,16 @@ trait MwegrzLibraryDependencies {
     lazy val ScalaCheck: String = "1.14.0"
     lazy val LogbackHocon: String = "0.1.7"
     lazy val ScalaStructlog: String = "0.1.14"
-    lazy val ScalaUtil: String = "0.1.53"
+    lazy val ScalaUtil: String = "0.1.54"
     lazy val Config: String = "1.3.4"
     lazy val BcpkixJdk15on: String = "1.61"
     lazy val BouncyCastle: String = BcpkixJdk15on
-    lazy val Circe: String = "0.12.0-M3"
+    lazy val Circe: String = "0.11.1"
     lazy val JwtCirce: String = "3.0.0"
     lazy val ScodecCore: String = "1.11.4"
     lazy val ScodecBits = "1.1.12"
     lazy val Avro4s: String = "2.0.4"
-    lazy val Cats: String = "2.0.0-M4"
+    lazy val Cats: String = "1.6.1"
     lazy val Scalactic: String = ScalaTest
     lazy val ScalaApp: String = "0.1.12"
     lazy val CommonsVfs2: String = "2.1"
@@ -39,9 +39,8 @@ trait MwegrzLibraryDependencies {
     lazy val AlpakkaKafka: String = "1.0.4"
     lazy val CassandraDriverCore: String = "3.7.1"
     lazy val CassandraDriverExtras: String = CassandraDriverCore
-    lazy val NetemeraScalaClient: String = "0.3.45"
+    lazy val NetemeraScalaClient: String = "0.3.46"
     lazy val Time4J: String = "4.38"
-    lazy val Ficus: String = "1.4.6"
     lazy val JBcrypt: String = "0.4"
     lazy val GoogleMapsServices: String = "0.9.3"
     lazy val BetterFiles: String = "3.8.0"
@@ -97,7 +96,6 @@ trait MwegrzLibraryDependencies {
   lazy val ScalaUtil: ModuleID = "com.github.mwegrz" %% "scala-util" % Versions.ScalaUtil
 
   lazy val Config: ModuleID = "com.typesafe" % "config" % Versions.Config
-  lazy val Ficus: ModuleID = "com.iheart" %% "ficus" % Versions.Ficus
 
   lazy val CirceCore: ModuleID = "io.circe" %% "circe-core" % Versions.Circe
   lazy val CirceGeneric: ModuleID = "io.circe" %% "circe-generic" % Versions.Circe
