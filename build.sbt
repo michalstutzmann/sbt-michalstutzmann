@@ -11,12 +11,12 @@ lazy val root = (project in file(".")).
       "-deprecation",
       "-unchecked"
     ),
-    scalaVersion := "2.12.8",
+    scalaVersion := "2.12.9",
     scalafmtOnCompile := true,
     libraryDependencies ++= Seq(
       "org.slf4j" % "slf4j-nop" % "1.7.25"
     ),
-    addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.0.1"),
+    addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.0.4"),
     addSbtPlugin("org.scalastyle" % "scalastyle-sbt-plugin" % "1.0.0"),
     addSbtPlugin("com.github.gseitz" % "sbt-release" % "1.0.11"),
     addSbtPlugin("com.github.mwegrz" % "sbt-logback" % "0.1.8"),

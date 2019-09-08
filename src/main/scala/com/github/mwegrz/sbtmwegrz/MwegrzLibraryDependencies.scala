@@ -6,10 +6,10 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 
 trait MwegrzLibraryDependencies {
   object Versions {
-    lazy val Scala: String = "2.12.8"
+    lazy val Scala: String = "2.12.9"
     lazy val ScalaCollectionCompat = "2.0.0"
     lazy val ThreetenExtra: String = "1.5.0"
-    lazy val Akka: String = "2.5.24"
+    lazy val Akka: String = "2.5.25"
     lazy val AkkaHttp: String = "10.1.9"
     lazy val AkkaHttpCors: String = "0.4.1"
     lazy val AkkaPersistenceCassandra: String = "0.99"
@@ -82,7 +82,7 @@ trait MwegrzLibraryDependencies {
   lazy val AkkaStreamAlpakkaCassandra
       : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaMqttStreaming
-      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % Versions.Alpakka
+      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % "1.0.2"
   lazy val AkkaStreamAlpakkaUdp: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-udp" % Versions.Alpakka
 
   lazy val ScalaTest: ModuleID = "org.scalatest" %% "scalatest" % Versions.ScalaTest
