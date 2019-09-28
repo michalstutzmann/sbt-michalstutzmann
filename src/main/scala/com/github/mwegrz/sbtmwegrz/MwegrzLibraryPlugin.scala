@@ -41,13 +41,13 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
         )
       ),
       scalaVersion := MwegrzLibraryDependencies.Versions.Scala,
-      //crossScalaVersions := Seq(scalaVersion.value, "2.12.8"),
+      crossScalaVersions := Seq(scalaVersion.value, "2.12.10"),
       scalacOptions ++=
         (CrossVersion.partialVersion(scalaVersion.value) match {
           case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
           case _                       => Seq("-Yno-adapted-args", "-deprecation")
         }),
-      addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
+      //addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.1" cross CrossVersion.full),
       scalafmtOnCompile := true,
       slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
       logbackVersion := MwegrzLibraryDependencies.Versions.Logback,

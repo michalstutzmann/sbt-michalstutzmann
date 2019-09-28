@@ -6,38 +6,38 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 
 trait MwegrzLibraryDependencies {
   object Versions {
-    lazy val Scala: String = "2.12.9"
-    lazy val ScalaCollectionCompat = "2.0.0"
+    lazy val Scala: String = "2.13.1"
+    //lazy val ScalaCollectionCompat = "2.0.0"
     lazy val ThreetenExtra: String = "1.5.0"
     lazy val Akka: String = "2.5.25"
-    lazy val AkkaHttp: String = "10.1.9"
+    lazy val AkkaHttp: String = "10.1.10"
     lazy val AkkaHttpCors: String = "0.4.1"
     lazy val AkkaPersistenceCassandra: String = "0.99"
 
-    lazy val AkkaHttpJson: String = "1.27.0"
+    lazy val AkkaHttpJson: String = "1.29.1"
     lazy val Alpakka: String = "1.1.1"
     lazy val Slf4j: String = "1.7.25"
     lazy val Logback: String = "1.2.3"
     lazy val ScalaTest: String = "3.0.8"
     lazy val ScalaCheck: String = "1.14.0"
     lazy val LogbackHocon: String = "0.1.7"
-    lazy val ScalaStructlog: String = "0.1.14"
+    lazy val ScalaStructlog: String = "0.1.16-SNAPSHOT"
     lazy val ScalaUtil: String = "0.1.58-SNAPSHOT"
     lazy val Config: String = "1.3.4"
     lazy val BcpkixJdk15on: String = "1.61"
     lazy val BouncyCastle: String = BcpkixJdk15on
-    lazy val Circe: String = "0.11.1"
-    lazy val JwtCirce: String = "2.1.0"
+    lazy val Circe: String = "0.12.1"
+    lazy val JwtCirce: String = "4.1.0"
     lazy val ScodecCore: String = "1.11.4"
     lazy val ScodecBits = "1.1.12"
-    lazy val Avro4s: String = "2.0.4"
-    lazy val Cats: String = "1.6.1"
+    lazy val Avro4s: String = "3.0.1"
+    lazy val Cats: String = "2.0.0"
     lazy val Scalactic: String = ScalaTest
-    lazy val ScalaApp: String = "0.1.12"
+    lazy val ScalaApp: String = "0.1.13"
     lazy val CommonsVfs2: String = "2.1"
     lazy val CommonsPool: String = "1.6"
     lazy val AlpakkaKafka: String = "1.0.4"
-    lazy val CassandraDriverCore: String = "3.7.1"
+    lazy val CassandraDriverCore: String = "3.5.1"
     lazy val CassandraDriverExtras: String = CassandraDriverCore
     lazy val NetemeraScalaClient: String = "0.3.50-SNAPSHOT"
     lazy val Time4J: String = "4.38"
@@ -45,12 +45,12 @@ trait MwegrzLibraryDependencies {
     lazy val GoogleMapsServices: String = "0.9.3"
     lazy val BetterFiles: String = "3.8.0"
     lazy val Geodesy: String = "1.1.3"
-    lazy val Slick: String = "3.3.0"
+    lazy val Slick: String = "3.3.2"
   }
 
   //"scala-parallel-collections" % Versions.Scala
-  lazy val ScalaCollectionCompat
-      : ModuleID = "org.scala-lang.modules" %% "scala-collection-compat" % Versions.ScalaCollectionCompat
+  //lazy val ScalaCollectionCompat
+  //: ModuleID = "org.scala-lang.modules" %% "scala-collection-compat" % Versions.ScalaCollectionCompat
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
 
   // Akka
@@ -69,6 +69,9 @@ trait MwegrzLibraryDependencies {
       : ModuleID = "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % Versions.AkkaPersistenceCassandra
   lazy val AkkaSlf4j: ModuleID = "com.typesafe.akka" %% "akka-slf4j" % Versions.Akka
 
+  // Akka Typed
+  lazy val AkkaPersistenceTyped: ModuleID = "com.typesafe.akka" %% "akka-persistence-typed" % Versions.Akka
+
   // Akka HTTP
   lazy val AkkaHttp: ModuleID = "com.typesafe.akka" %% "akka-http" % Versions.AkkaHttp
   lazy val AkkaHttpTestkit: ModuleID = "com.typesafe.akka" %% "akka-http-testkit" % Versions.AkkaHttp
@@ -82,7 +85,7 @@ trait MwegrzLibraryDependencies {
   lazy val AkkaStreamAlpakkaCassandra
       : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaMqttStreaming
-      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % "1.0.2"
+      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % Versions.Alpakka //"1.0.2"
   lazy val AkkaStreamAlpakkaUdp: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-udp" % Versions.Alpakka
 
   lazy val ScalaTest: ModuleID = "org.scalatest" %% "scalatest" % Versions.ScalaTest

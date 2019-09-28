@@ -4,7 +4,7 @@ import sbt.Keys._
 import sbt.{ Setting, _ }
 import sbtrelease.ReleasePlugin.autoImport._
 import ReleaseTransformations._
-import com.typesafe.sbt.pgp.PgpKeys
+import com.jsuereth.sbtpgp.PgpKeys
 
 import scala.language.implicitConversions
 
