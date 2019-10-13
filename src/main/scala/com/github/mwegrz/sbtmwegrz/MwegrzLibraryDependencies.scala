@@ -7,7 +7,6 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 trait MwegrzLibraryDependencies {
   object Versions {
     lazy val Scala: String = "2.13.1"
-    //lazy val ScalaCollectionCompat = "2.0.0"
     lazy val ThreetenExtra: String = "1.5.0"
     lazy val Akka: String = "2.5.25"
     lazy val AkkaHttp: String = "10.1.10"
@@ -15,7 +14,7 @@ trait MwegrzLibraryDependencies {
     lazy val AkkaPersistenceCassandra: String = "0.99"
 
     lazy val AkkaHttpJson: String = "1.29.1"
-    lazy val Alpakka: String = "1.1.1"
+    lazy val Alpakka: String = "1.1.2"
     lazy val Slf4j: String = "1.7.25"
     lazy val Logback: String = "1.2.3"
     lazy val ScalaTest: String = "3.0.8"
@@ -48,9 +47,6 @@ trait MwegrzLibraryDependencies {
     lazy val Slick: String = "3.3.2"
   }
 
-  //"scala-parallel-collections" % Versions.Scala
-  //lazy val ScalaCollectionCompat
-  //: ModuleID = "org.scala-lang.modules" %% "scala-collection-compat" % Versions.ScalaCollectionCompat
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
 
   // Akka
@@ -85,7 +81,7 @@ trait MwegrzLibraryDependencies {
   lazy val AkkaStreamAlpakkaCassandra
       : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaMqttStreaming
-      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % Versions.Alpakka //"1.0.2"
+      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaUdp: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-udp" % Versions.Alpakka
 
   lazy val ScalaTest: ModuleID = "org.scalatest" %% "scalatest" % Versions.ScalaTest
