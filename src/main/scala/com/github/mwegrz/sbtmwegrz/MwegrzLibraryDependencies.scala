@@ -8,10 +8,10 @@ trait MwegrzLibraryDependencies {
   object Versions {
     lazy val Scala: String = "2.13.1"
     lazy val ThreetenExtra: String = "1.5.0"
-    lazy val Akka: String = "2.5.25"
+    lazy val Akka: String = "2.5.26"
     lazy val AkkaHttp: String = "10.1.10"
     lazy val AkkaHttpCors: String = "0.4.1"
-    lazy val AkkaPersistenceCassandra: String = "0.99"
+    lazy val AkkaPersistenceCassandra: String = "0.100"
 
     lazy val AkkaHttpJson: String = "1.29.1"
     lazy val Alpakka: String = "1.1.2"
@@ -25,11 +25,11 @@ trait MwegrzLibraryDependencies {
     lazy val Config: String = "1.3.4"
     lazy val BcpkixJdk15on: String = "1.61"
     lazy val BouncyCastle: String = BcpkixJdk15on
-    lazy val Circe: String = "0.12.1"
+    lazy val Circe: String = "0.12.3"
     lazy val JwtCirce: String = "4.1.0"
     lazy val ScodecCore: String = "1.11.4"
     lazy val ScodecBits = "1.1.12"
-    lazy val Avro4s: String = "3.0.1"
+    lazy val Avro4s: String = "3.0.2"
     lazy val Cats: String = "2.0.0"
     lazy val Scalactic: String = ScalaTest
     lazy val ScalaApp: String = "0.1.13"
