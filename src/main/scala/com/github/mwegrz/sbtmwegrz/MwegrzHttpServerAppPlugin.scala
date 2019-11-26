@@ -51,7 +51,8 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
         CirceGeneric,
         CirceGenericExtras,
         CirceParser,
-        Avro4sCore
+        Avro4sCore,
+        Courier
       ),
       dependencyOverrides ++= Seq(
         CassandraDriverCore,

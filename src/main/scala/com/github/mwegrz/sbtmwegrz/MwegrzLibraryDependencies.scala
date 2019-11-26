@@ -26,10 +26,11 @@ trait MwegrzLibraryDependencies {
     lazy val BcpkixJdk15on: String = "1.61"
     lazy val BouncyCastle: String = BcpkixJdk15on
     lazy val Circe: String = "0.12.3"
+    lazy val CirceGenericExtras: String = "0.12.2"
     lazy val JwtCirce: String = "4.1.0"
     lazy val ScodecCore: String = "1.11.4"
     lazy val ScodecBits = "1.1.12"
-    lazy val Avro4s: String = "3.0.2"
+    lazy val Avro4s: String = "3.0.4"
     lazy val Cats: String = "2.0.0"
     lazy val Scalactic: String = ScalaTest
     lazy val ScalaApp: String = "0.1.13"
@@ -45,6 +46,7 @@ trait MwegrzLibraryDependencies {
     lazy val BetterFiles: String = "3.8.0"
     lazy val Geodesy: String = "1.1.3"
     lazy val Slick: String = "3.3.2"
+    lazy val Courier: String = "2.0.0"
   }
 
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
@@ -98,7 +100,7 @@ trait MwegrzLibraryDependencies {
 
   lazy val CirceCore: ModuleID = "io.circe" %% "circe-core" % Versions.Circe
   lazy val CirceGeneric: ModuleID = "io.circe" %% "circe-generic" % Versions.Circe
-  lazy val CirceGenericExtras: ModuleID = "io.circe" %% "circe-generic-extras" % Versions.Circe
+  lazy val CirceGenericExtras: ModuleID = "io.circe" %% "circe-generic-extras" % Versions.CirceGenericExtras
   lazy val CirceParser: ModuleID = "io.circe" %% "circe-parser" % Versions.Circe
   lazy val CirceJava8: ModuleID = "io.circe" %% "circe-java8" % Versions.Circe
   lazy val Circe: Seq[ModuleID] =
@@ -132,4 +134,6 @@ trait MwegrzLibraryDependencies {
   lazy val Geodesy: ModuleID = "org.gavaghan" % "geodesy" % Versions.Geodesy
   lazy val Slick: ModuleID = "com.typesafe.slick" %% "slick" % Versions.Slick
   lazy val SlickHikaricp: ModuleID = "com.typesafe.slick" %% "slick-hikaricp" % Versions.Slick
+
+  lazy val Courier: ModuleID = "com.github.daddykotex" %% "courier" % Versions.Courier
 }
