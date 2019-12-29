@@ -47,6 +47,7 @@ trait MwegrzLibraryDependencies {
     lazy val Geodesy: String = "1.1.3"
     lazy val Slick: String = "3.3.2"
     lazy val Courier: String = "2.0.0"
+    lazy val Breeze: String = "1.0"
   }
 
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
@@ -125,7 +126,7 @@ trait MwegrzLibraryDependencies {
   lazy val NetemeraScalaClient: ModuleID = "com.netemera" %% "netemera-scala-client" % Versions.NetemeraScalaClient
   lazy val Time4jCore: ModuleID = "net.time4j" % "time4j-core" % Versions.Time4J
   lazy val NettyTransportNativeEpoll
-      : ModuleID = "io.netty" % "netty-transport-native-epoll" % "4.1.21.Final" // Cassandra asks for it
+      : ModuleID = "io.netty" % "netty-transport-native-epoll" % "4.1.44.Final" classifier ("linux-x86_64") // Cassandra asks for it
   lazy val HttpClient: ModuleID = "org.apache.httpcomponents" % "httpclient" % "4.5.5"
 
   lazy val JBcrypt: ModuleID = "org.mindrot" % "jbcrypt" % Versions.JBcrypt
@@ -136,4 +137,5 @@ trait MwegrzLibraryDependencies {
   lazy val SlickHikaricp: ModuleID = "com.typesafe.slick" %% "slick-hikaricp" % Versions.Slick
 
   lazy val Courier: ModuleID = "com.github.daddykotex" %% "courier" % Versions.Courier
+  lazy val Breeze: ModuleID = "org.scalanlp" %% "breeze" % Versions.Breeze
 }
