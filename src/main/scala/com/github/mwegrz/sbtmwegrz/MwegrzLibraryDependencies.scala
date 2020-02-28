@@ -40,7 +40,7 @@ trait MwegrzLibraryDependencies {
     lazy val CassandraDriverCore: String = "3.5.1"
     lazy val CassandraDriverExtras: String = CassandraDriverCore
     lazy val NetemeraScalaClient: String = "0.3.50-SNAPSHOT"
-    lazy val Time4J: String = "4.38"
+    lazy val Time4J: String = "5.5" //"4.38"
     lazy val JBcrypt: String = "0.4"
     lazy val GoogleMapsServices: String = "0.9.3"
     lazy val BetterFiles: String = "3.8.0"
@@ -48,6 +48,7 @@ trait MwegrzLibraryDependencies {
     lazy val Slick: String = "3.3.2"
     lazy val Courier: String = "2.0.0"
     lazy val Breeze: String = "1.0"
+    lazy val Lettuce: String = "5.2.1.RELEASE"
   }
 
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
@@ -124,7 +125,7 @@ trait MwegrzLibraryDependencies {
   lazy val CommonsVfs2: ModuleID = "org.apache.commons" % "commons-vfs2" % Versions.CommonsVfs2
   lazy val CommonsPool: ModuleID = "commons-pool" % "commons-pool" % Versions.CommonsPool
   lazy val NetemeraScalaClient: ModuleID = "com.netemera" %% "netemera-scala-client" % Versions.NetemeraScalaClient
-  lazy val Time4jCore: ModuleID = "net.time4j" % "time4j-core" % Versions.Time4J
+  lazy val Time4jBase: ModuleID = "net.time4j" % "time4j-base" % Versions.Time4J
   lazy val NettyTransportNativeEpoll
       : ModuleID = "io.netty" % "netty-transport-native-epoll" % "4.1.44.Final" classifier ("linux-x86_64") // Cassandra asks for it
   lazy val HttpClient: ModuleID = "org.apache.httpcomponents" % "httpclient" % "4.5.5"
@@ -138,4 +139,5 @@ trait MwegrzLibraryDependencies {
 
   lazy val Courier: ModuleID = "com.github.daddykotex" %% "courier" % Versions.Courier
   lazy val Breeze: ModuleID = "org.scalanlp" %% "breeze" % Versions.Breeze
+  lazy val LettuceCore: ModuleID = "io.lettuce" % "lettuce-core" % Versions.Lettuce
 }

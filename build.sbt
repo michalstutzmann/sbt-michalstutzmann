@@ -14,7 +14,8 @@ lazy val root = (project in file(".")).
     scalaVersion := "2.12.10",
     scalafmtOnCompile := true,
     libraryDependencies ++= Seq(
-      "org.slf4j" % "slf4j-nop" % "1.7.25"
+      "org.slf4j" % "slf4j-nop" % "1.7.25",
+      "com.thesamet.scalapb" %% "compilerplugin" % "0.9.4"
     ),
     addSbtPlugin("org.scalameta" % "sbt-scalafmt" % "2.0.5"),
     addSbtPlugin("org.scalastyle" % "scalastyle-sbt-plugin" % "1.0.0"),
@@ -27,6 +28,7 @@ lazy val root = (project in file(".")).
     addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "3.7"),
     addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.10.0-RC1"),
     addSbtPlugin("com.github.cb372" % "sbt-explicit-dependencies" % "0.2.11"),
+    addSbtPlugin("com.thesamet" % "sbt-protoc" % "0.99.27"),
     // Release settings
     releaseTagName := { (version in ThisBuild).value },
     releaseTagComment := s"Release version ${(version in ThisBuild).value}",

@@ -14,6 +14,7 @@ import ReleaseTransformations._
 import net.virtualvoid.sbt.graph.DependencyGraphPlugin
 import org.scalafmt.sbt.ScalafmtPlugin.autoImport._
 import org.scalafmt.sbt.ScalafmtPlugin
+import sbtprotoc.ProtocPlugin.autoImport.PB
 
 import scala.language.implicitConversions
 
@@ -56,7 +57,11 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
         ScalaCheck % "test,it",
         LogbackHocon,
         ScalaStructlog,
-        Config
+        Config,
+        "com.thesamet.scalapb" %% "scalapb-runtime" % scalapb.compiler.Version.scalapbVersion % "protobuf,compile"
+      ),
+      PB.targets in Compile := Seq(
+        scalapb.gen() -> (sourceManaged in Compile).value
       ),
       releaseCrossBuild := false,
       releaseTagName := { (version in ThisBuild).value },

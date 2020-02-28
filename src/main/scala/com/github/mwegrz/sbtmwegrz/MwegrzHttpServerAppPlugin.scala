@@ -59,12 +59,13 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
         CassandraDriverExtras,
         "com.google.guava" % "guava" % "19.0"
       ),
+      publishArtifact in (Compile, packageDoc) := false,
       Revolver.enableDebugging(port = 5050, suspend = false),
       maintainer := "Michał Węgrzyn",
       packageSummary := name.value,
       packageDescription := name.value,
       topLevelDirectory := None,
-      dockerBaseImage := "azul/zulu-openjdk-alpine:8u232-jre",
+      dockerBaseImage := "mwegrz/docker-java-jre-bash:0.1.0",
       dockerUpdateLatest := true,
       dockerAlias := DockerAlias(
         dockerRepository.value,
