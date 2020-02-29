@@ -39,7 +39,7 @@ trait MwegrzLibraryDependencies {
     lazy val AlpakkaKafka: String = "1.0.4"
     lazy val CassandraDriverCore: String = "3.5.1"
     lazy val CassandraDriverExtras: String = CassandraDriverCore
-    lazy val NetemeraScalaClient: String = "0.3.50-SNAPSHOT"
+    lazy val NetemeraScalaClient: String = "0.4.0-SNAPSHOT"
     lazy val Time4J: String = "5.5" //"4.38"
     lazy val JBcrypt: String = "0.4"
     lazy val GoogleMapsServices: String = "0.9.3"
