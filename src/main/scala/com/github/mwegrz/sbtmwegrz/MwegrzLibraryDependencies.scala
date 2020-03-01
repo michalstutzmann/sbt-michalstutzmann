@@ -20,7 +20,7 @@ trait MwegrzLibraryDependencies {
     lazy val ScalaTest: String = "3.0.8"
     lazy val ScalaCheck: String = "1.14.0"
     lazy val LogbackHocon: String = "0.1.7"
-    lazy val ScalaStructlog: String = "0.1.16-SNAPSHOT"
+    lazy val ScalaStructlog: String = "0.1.16"
     lazy val ScalaUtil: String = "0.1.58-SNAPSHOT"
     lazy val Config: String = "1.3.4"
     lazy val BcpkixJdk15on: String = "1.61"
