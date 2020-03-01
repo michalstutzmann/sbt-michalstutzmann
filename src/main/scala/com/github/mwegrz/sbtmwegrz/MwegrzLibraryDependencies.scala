@@ -33,7 +33,7 @@ trait MwegrzLibraryDependencies {
     lazy val Avro4s: String = "3.0.4"
     lazy val Cats: String = "2.0.0"
     lazy val Scalactic: String = ScalaTest
-    lazy val ScalaApp: String = "0.1.14"
+    lazy val ScalaApp: String = "0.1.15"
     lazy val CommonsVfs2: String = "2.1"
     lazy val CommonsPool: String = "1.6"
     lazy val AlpakkaKafka: String = "1.0.4"
