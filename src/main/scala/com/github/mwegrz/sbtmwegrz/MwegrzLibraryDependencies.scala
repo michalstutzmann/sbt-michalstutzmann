@@ -63,10 +63,10 @@ trait MwegrzLibraryDependencies {
   lazy val AkkaClusterTools: ModuleID = "com.typesafe.akka" %% "akka-cluster-tools" % Versions.Akka
   lazy val AkkaPersistence: ModuleID = "com.typesafe.akka" %% "akka-persistence" % Versions.Akka
   lazy val AkkaPersistenceQuery: ModuleID = "com.typesafe.akka" %% "akka-persistence-query" % Versions.Akka
-  lazy val AkkaPersistenceCassandra
-      : ModuleID = "com.typesafe.akka" %% "akka-persistence-cassandra" % Versions.AkkaPersistenceCassandra
-  lazy val AkkaPersistenceCassandraLauncher
-      : ModuleID = "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % Versions.AkkaPersistenceCassandra
+  lazy val AkkaPersistenceCassandra: ModuleID =
+    "com.typesafe.akka" %% "akka-persistence-cassandra" % Versions.AkkaPersistenceCassandra
+  lazy val AkkaPersistenceCassandraLauncher: ModuleID =
+    "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % Versions.AkkaPersistenceCassandra
   lazy val AkkaSlf4j: ModuleID = "com.typesafe.akka" %% "akka-slf4j" % Versions.Akka
 
   // Akka Typed
@@ -82,10 +82,10 @@ trait MwegrzLibraryDependencies {
 
   // Alpakka
   lazy val AkkaStreamAlpakkaSse: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-sse" % Versions.Alpakka
-  lazy val AkkaStreamAlpakkaCassandra
-      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % Versions.Alpakka
-  lazy val AkkaStreamAlpakkaMqttStreaming
-      : ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % Versions.Alpakka
+  lazy val AkkaStreamAlpakkaCassandra: ModuleID =
+    "com.lightbend.akka" %% "akka-stream-alpakka-cassandra" % Versions.Alpakka
+  lazy val AkkaStreamAlpakkaMqttStreaming: ModuleID =
+    "com.lightbend.akka" %% "akka-stream-alpakka-mqtt-streaming" % Versions.Alpakka
   lazy val AkkaStreamAlpakkaUdp: ModuleID = "com.lightbend.akka" %% "akka-stream-alpakka-udp" % Versions.Alpakka
 
   lazy val ScalaTest: ModuleID = "org.scalatest" %% "scalatest" % Versions.ScalaTest
@@ -116,18 +116,18 @@ trait MwegrzLibraryDependencies {
   lazy val BouncyCastle: ModuleID = BcpkixJdk15on
   lazy val ScodecCore: ModuleID = "org.scodec" %% "scodec-core" % Versions.ScodecCore
   lazy val ScodecBits: ModuleID = "org.scodec" %% "scodec-bits" % Versions.ScodecBits
-  lazy val CassandraDriverCore
-      : ModuleID = "com.datastax.cassandra" % "cassandra-driver-core" % Versions.CassandraDriverCore
-  lazy val CassandraDriverExtras
-      : ModuleID = "com.datastax.cassandra" % "cassandra-driver-extras" % Versions.CassandraDriverExtras
+  lazy val CassandraDriverCore: ModuleID =
+    "com.datastax.cassandra" % "cassandra-driver-core" % Versions.CassandraDriverCore
+  lazy val CassandraDriverExtras: ModuleID =
+    "com.datastax.cassandra" % "cassandra-driver-extras" % Versions.CassandraDriverExtras
 
   lazy val AlpakkaKafka: ModuleID = "com.typesafe.akka" %% "akka-stream-kafka" % Versions.AlpakkaKafka
   lazy val CommonsVfs2: ModuleID = "org.apache.commons" % "commons-vfs2" % Versions.CommonsVfs2
   lazy val CommonsPool: ModuleID = "commons-pool" % "commons-pool" % Versions.CommonsPool
   lazy val NetemeraScalaClient: ModuleID = "com.netemera" %% "netemera-scala-client" % Versions.NetemeraScalaClient
   lazy val Time4jBase: ModuleID = "net.time4j" % "time4j-base" % Versions.Time4J
-  lazy val NettyTransportNativeEpoll
-      : ModuleID = "io.netty" % "netty-transport-native-epoll" % "4.1.44.Final" classifier ("linux-x86_64") // Cassandra asks for it
+  lazy val NettyTransportNativeEpoll: ModuleID =
+    "io.netty" % "netty-transport-native-epoll" % "4.1.44.Final" classifier ("linux-x86_64") // Cassandra asks for it
   lazy val HttpClient: ModuleID = "org.apache.httpcomponents" % "httpclient" % "4.5.5"
 
   lazy val JBcrypt: ModuleID = "org.mindrot" % "jbcrypt" % Versions.JBcrypt

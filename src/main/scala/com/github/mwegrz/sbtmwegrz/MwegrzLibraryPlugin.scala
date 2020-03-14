@@ -83,9 +83,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
       autoScalaLibrary := true,
       publishMavenStyle := true,
       publishArtifact in Test := false,
-      pomIncludeRepository := { _ =>
-        false
-      },
+      pomIncludeRepository := { _ => false },
       git.useGitDescribe := true,
       offline := false,
       fork in run := true,
