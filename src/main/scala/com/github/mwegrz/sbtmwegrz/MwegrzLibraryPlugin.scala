@@ -85,9 +85,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
       publishArtifact in Test := false,
       pomIncludeRepository := { _ => false },
       git.useGitDescribe := true,
-      git.formattedShaVersion := git.gitHeadCommit.value map { sha =>
-        s"$sha".substring(0, 7)
-      },
+      git.formattedShaVersion := git.gitHeadCommit.value map { sha => s"$sha".substring(0, 7) },
       offline := false,
       fork in run := true,
       connectInput in run := true
