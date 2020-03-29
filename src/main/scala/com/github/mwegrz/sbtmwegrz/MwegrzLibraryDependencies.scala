@@ -30,7 +30,7 @@ trait MwegrzLibraryDependencies {
     lazy val JwtCirce: String = "4.1.0"
     lazy val ScodecCore: String = "1.11.4"
     lazy val ScodecBits = "1.1.12"
-    lazy val Avro4s: String = "3.0.4"
+    lazy val Avro4s: String = "3.0.9"
     lazy val Cats: String = "2.0.0"
     lazy val Scalactic: String = ScalaTest
     lazy val ScalaApp: String = "0.1.16"
