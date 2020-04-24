@@ -17,7 +17,7 @@ trait MwegrzLibraryDependencies {
     lazy val Alpakka: String = "1.1.2"
     lazy val Slf4j: String = "1.7.25"
     lazy val Logback: String = "1.2.3"
-    lazy val ScalaTest: String = "3.0.8"
+    lazy val ScalaTest: String = "3.1.1"
     lazy val ScalaCheck: String = "1.14.0"
     lazy val LogbackHocon: String = "0.1.7"
     lazy val ScalaStructlog: String = "0.1.16"
