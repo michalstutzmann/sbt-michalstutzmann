@@ -46,7 +46,7 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
       scalacOptions ++=
         (CrossVersion.partialVersion(scalaVersion.value) match {
           case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
-          case _                       => Seq("-Yno-adapted-args", "-deprecation")
+          case _                       => Seq("-Yno-adapted-args", "-deprecation", "-Ypartial-unification")
         }),
       scalafmtOnCompile := true,
       slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
