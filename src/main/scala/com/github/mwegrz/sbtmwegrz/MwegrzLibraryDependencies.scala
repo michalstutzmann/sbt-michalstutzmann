@@ -40,7 +40,7 @@ trait MwegrzLibraryDependencies {
     lazy val CassandraDriverCore: String = "3.5.1"
     lazy val CassandraDriverExtras: String = CassandraDriverCore
     lazy val NetemeraScalaClient: String = "0.4.0-SNAPSHOT"
-    lazy val Time4J: String = "5.5" //"4.38"
+    lazy val Time4J: String = "5.5"
     lazy val JBcrypt: String = "0.4"
     lazy val GoogleMapsServices: String = "0.9.3"
     lazy val BetterFiles: String = "3.8.0"
@@ -49,6 +49,7 @@ trait MwegrzLibraryDependencies {
     lazy val Courier: String = "2.0.0"
     lazy val Breeze: String = "1.0"
     lazy val Lettuce: String = "5.2.1.RELEASE"
+    lazy val Tapir: String = "0.14.3"
   }
 
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
@@ -140,4 +141,5 @@ trait MwegrzLibraryDependencies {
   lazy val Courier: ModuleID = "com.github.daddykotex" %% "courier" % Versions.Courier
   lazy val Breeze: ModuleID = "org.scalanlp" %% "breeze" % Versions.Breeze
   lazy val LettuceCore: ModuleID = "io.lettuce" % "lettuce-core" % Versions.Lettuce
+  lazy val TapirCore: ModuleID = "com.softwaremill.sttp.tapir" %% "tapir-core" % Versions.Tapir
 }
