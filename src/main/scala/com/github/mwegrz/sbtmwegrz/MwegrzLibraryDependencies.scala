@@ -40,6 +40,7 @@ trait MwegrzLibraryDependencies {
     lazy val CassandraDriverCore: String = "3.5.1"
     lazy val CassandraDriverExtras: String = CassandraDriverCore
     lazy val NetemeraScalaClient: String = "0.4.0-SNAPSHOT"
+    lazy val OcupolyScalaUtil: String = "0.1.0-SNAPSHOT"
     lazy val Time4J: String = "5.5"
     lazy val JBcrypt: String = "0.4"
     lazy val GoogleMapsServices: String = "0.9.3"
@@ -127,6 +128,7 @@ trait MwegrzLibraryDependencies {
   lazy val CommonsVfs2: ModuleID = "org.apache.commons" % "commons-vfs2" % Versions.CommonsVfs2
   lazy val CommonsPool: ModuleID = "commons-pool" % "commons-pool" % Versions.CommonsPool
   lazy val NetemeraScalaClient: ModuleID = "com.netemera" %% "netemera-scala-client" % Versions.NetemeraScalaClient
+  lazy val OcupolyScalaUtil: ModuleID = "com.ocupoly" %% "ocupoly-scala-util" % Versions.OcupolyScalaUtil
   lazy val Time4jBase: ModuleID = "net.time4j" % "time4j-base" % Versions.Time4J
   lazy val NettyTransportNativeEpoll: ModuleID =
     "io.netty" % "netty-transport-native-epoll" % "4.1.44.Final" classifier ("linux-x86_64") // Cassandra asks for it
