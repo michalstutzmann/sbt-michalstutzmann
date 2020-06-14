@@ -50,6 +50,7 @@ trait MwegrzLibraryDependencies {
     lazy val Breeze: String = "1.0"
     lazy val Lettuce: String = "5.2.1.RELEASE"
     lazy val Tapir: String = "0.14.3"
+    lazy val Magnolia: String = "0.16.0"
   }
 
   lazy val ThreetenExtra: ModuleID = "org.threeten" % "threeten-extra" % Versions.ThreetenExtra
@@ -142,4 +143,5 @@ trait MwegrzLibraryDependencies {
   lazy val Breeze: ModuleID = "org.scalanlp" %% "breeze" % Versions.Breeze
   lazy val LettuceCore: ModuleID = "io.lettuce" % "lettuce-core" % Versions.Lettuce
   lazy val TapirCore: ModuleID = "com.softwaremill.sttp.tapir" %% "tapir-core" % Versions.Tapir
+  lazy val Magnolia: ModuleID = "com.propensive" %% "magnolia" % Versions.Magnolia
 }
