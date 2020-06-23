@@ -48,6 +48,8 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
           case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
           case _                       => Seq("-Yno-adapted-args", "-deprecation", "-Ypartial-unification")
         }),
+      scalafmtCheck := true,
+      scalafmtSbtCheck := true,
       slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
       logbackVersion := MwegrzLibraryDependencies.Versions.Logback,
       libraryDependencies ++= Seq(

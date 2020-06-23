@@ -12,7 +12,8 @@ lazy val root = (project in file(".")).
       "-unchecked"
     ),
     scalaVersion := "2.12.10",
-    scalafmtOnCompile := true,
+    scalafmtCheck := true,
+    scalafmtSbtCheck := true,
     libraryDependencies ++= Seq(
       "org.slf4j" % "slf4j-nop" % "1.7.25",
       "com.thesamet.scalapb" %% "compilerplugin" % "0.9.4"
