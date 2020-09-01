@@ -12,6 +12,7 @@ trait MwegrzLibraryDependencies {
     lazy val AkkaHttp: String = "10.1.10"
     lazy val AkkaHttpCors: String = "0.4.1"
     lazy val AkkaPersistenceCassandra: String = "0.100"
+    lazy val AkkaQuartzScheduler: String = "1.8.4-akka-2.6.x"
 
     lazy val AkkaHttpJson: String = "1.29.1"
     lazy val Alpakka: String = "1.1.2"
@@ -71,6 +72,7 @@ trait MwegrzLibraryDependencies {
   lazy val AkkaPersistenceCassandraLauncher: ModuleID =
     "com.typesafe.akka" %% "akka-persistence-cassandra-launcher" % Versions.AkkaPersistenceCassandra
   lazy val AkkaSlf4j: ModuleID = "com.typesafe.akka" %% "akka-slf4j" % Versions.Akka
+  lazy val AkkaQuartzScheduler: ModuleID = "com.enragedginger" %% "akka-quartz-scheduler" % Versions.AkkaQuartzScheduler
 
   // Akka Typed
   lazy val AkkaPersistenceTyped: ModuleID = "com.typesafe.akka" %% "akka-persistence-typed" % Versions.Akka
