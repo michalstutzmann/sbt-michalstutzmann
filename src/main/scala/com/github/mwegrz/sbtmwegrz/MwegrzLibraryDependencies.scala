@@ -6,7 +6,7 @@ object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
 
 trait MwegrzLibraryDependencies {
   object Versions {
-    lazy val Scala: String = "2.13.2"
+    lazy val Scala: String = "2.13.3"
     lazy val ThreetenExtra: String = "1.5.0"
     lazy val Akka: String = "2.5.26"
     lazy val AkkaHttp: String = "10.1.10"
