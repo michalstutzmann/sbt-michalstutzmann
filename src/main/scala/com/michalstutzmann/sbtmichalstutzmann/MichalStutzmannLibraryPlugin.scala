@@ -1,8 +1,8 @@
-package com.github.mwegrz.sbtmwegrz
+package com.michalstutzmann.sbtmichalstutzmann
 
 import com.github.mwegrz.sbtlogback.LogbackPlugin
 import com.github.mwegrz.sbtlogback.LogbackPlugin.autoImport._
-import com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies._
+import MichalStutzmannLibraryDependencies._
 import com.typesafe.sbt.GitPlugin.autoImport.git
 import com.typesafe.sbt.GitVersioning
 import org.scalastyle.sbt.ScalastylePlugin
@@ -18,9 +18,9 @@ import sbtprotoc.ProtocPlugin.autoImport.PB
 
 import scala.language.implicitConversions
 
-object MwegrzLibraryPlugin extends MwegrzLibraryPlugin
+object MichalStutzmannLibraryPlugin extends MichalStutzmannLibraryPlugin
 
-trait MwegrzLibraryPlugin extends AutoPlugin {
+trait MichalStutzmannLibraryPlugin extends AutoPlugin {
   override def requires: Plugins =
     ScalafmtPlugin && ScalastylePlugin && LogbackPlugin && ReleasePlugin &&
       GitVersioning && DependencyGraphPlugin
@@ -31,18 +31,18 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
 
   override def projectSettings: Seq[Setting[_]] =
     Seq(
-      organization := "com.github.mwegrz",
-      organizationName := "Michał Węgrzyn",
+      organization := "com.michalstutzmann",
+      organizationName := "Michał Stutzmann",
       developers := List(
         Developer(
-          id = "mwegrz",
-          name = "Michał Węgrzyn",
+          id = "michalstutzmann",
+          name = "Michał Stutzmann",
           email = null,
-          url = url("https://github.com/mwegrz")
+          url = url("https://github.com/michalstutzmann")
         )
       ),
-      scalaVersion := MwegrzLibraryDependencies.Versions.Scala,
-      crossScalaVersions := Seq(scalaVersion.value, "2.12.10"),
+      scalaVersion := MichalStutzmannLibraryDependencies.Versions.Scala,
+      crossScalaVersions := Seq(scalaVersion.value, "2.12.12"),
       scalacOptions ++=
         (CrossVersion.partialVersion(scalaVersion.value) match {
           case Some((2, n)) if n >= 13 => Seq("-Xsource:2.14")
@@ -50,8 +50,8 @@ trait MwegrzLibraryPlugin extends AutoPlugin {
         }),
       scalafmtCheck := true,
       scalafmtSbtCheck := true,
-      slf4jVersion := MwegrzLibraryDependencies.Versions.Slf4j,
-      logbackVersion := MwegrzLibraryDependencies.Versions.Logback,
+      slf4jVersion := MichalStutzmannLibraryDependencies.Versions.Slf4j,
+      logbackVersion := MichalStutzmannLibraryDependencies.Versions.Logback,
       libraryDependencies ++= Seq(
         ThreetenExtra,
         ScalaTest % "test,it",

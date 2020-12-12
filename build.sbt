@@ -1,10 +1,10 @@
 import ReleaseTransformations._
 
-lazy val root = (project in file(".")).
-  enablePlugins(SbtPlugin, ReleasePlugin, ScalafmtPlugin).
-  settings(
+lazy val root = (project in file("."))
+  .enablePlugins(SbtPlugin, ReleasePlugin, ScalafmtPlugin)
+  .settings(
     name := "sbt-michalstutzmann",
-    organization := "com.github.michalstutzmann",
+    organization := "com.michalstutzmann",
     scalacOptions ++= Seq(
       "-encoding",
       "UTF-8",

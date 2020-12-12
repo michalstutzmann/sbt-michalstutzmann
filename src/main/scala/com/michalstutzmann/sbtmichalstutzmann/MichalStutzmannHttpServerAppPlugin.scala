@@ -1,4 +1,4 @@
-package com.github.mwegrz.sbtmwegrz
+package com.michalstutzmann.sbtmichalstutzmann
 
 import com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging
 import com.typesafe.sbt.SbtNativePackager
@@ -10,14 +10,14 @@ import sbt.{ Setting, _ }
 import spray.revolver.RevolverPlugin
 import spray.revolver.RevolverPlugin.autoImport._
 import com.typesafe.sbt.packager.universal.UniversalPlugin.autoImport._
-import com.github.mwegrz.sbtmwegrz.MwegrzLibraryDependencies._
+import MichalStutzmannLibraryDependencies._
 import net.virtualvoid.sbt.graph.DependencyGraphPlugin
 
 import scala.language.implicitConversions
 
-object MwegrzHttpServerAppPlugin extends MwegrzHttpServerAppPlugin
+object MichalStutzmannHttpServerAppPlugin extends MichalStutzmannHttpServerAppPlugin
 
-trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
+trait MichalStutzmannHttpServerAppPlugin extends MichalStutzmannLibraryPlugin {
   override def requires: Plugins =
     super.requires && SbtNativePackager && JavaServerAppPackaging && DockerPlugin && RevolverPlugin && DependencyGraphPlugin
 
@@ -62,7 +62,7 @@ trait MwegrzHttpServerAppPlugin extends MwegrzLibraryPlugin {
       ),
       publishArtifact in (Compile, packageDoc) := false,
       Revolver.enableDebugging(port = 5050, suspend = false),
-      maintainer := "Michał Węgrzyn",
+      maintainer := "Michał Stutzmann",
       packageSummary := name.value,
       packageDescription := name.value,
       topLevelDirectory := None,

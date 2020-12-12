@@ -1,4 +1,4 @@
-package com.github.mwegrz.sbtmwegrz
+package com.michalstutzmann.sbtmichalstutzmann
 
 import sbt.Keys._
 import sbt.{ Setting, _ }
@@ -8,9 +8,9 @@ import com.jsuereth.sbtpgp.PgpKeys
 
 import scala.language.implicitConversions
 
-object MwegrzApache2LibraryPlugin extends MwegrzApache2LibraryPlugin
+object MichalStutzmannApache2LibraryPlugin extends MichalStutzmannApache2LibraryPlugin
 
-trait MwegrzApache2LibraryPlugin extends MwegrzLibraryPlugin {
+trait MichalStutzmannApache2LibraryPlugin extends MichalStutzmannLibraryPlugin {
   override def projectSettings: Seq[Setting[_]] =
     super.projectSettings ++ Seq(
       releaseProcess := Seq[ReleaseStep](

@@ -1,10 +1,10 @@
-package com.github.mwegrz.sbtmwegrz
+package com.michalstutzmann.sbtmichalstutzmann
 
 import sbt._
 
-object MwegrzLibraryDependencies extends MwegrzLibraryDependencies
+object MichalStutzmannLibraryDependencies extends MichalStutzmannLibraryDependencies
 
-trait MwegrzLibraryDependencies {
+trait MichalStutzmannLibraryDependencies {
   object Versions {
     lazy val Scala: String = "2.13.4"
     lazy val ThreetenExtra: String = "1.5.0"
