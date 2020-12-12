@@ -1,1 +1,1 @@
-# sbt-mwegrz
+# sbt-michalstutzmann
