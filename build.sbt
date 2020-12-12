@@ -3,15 +3,15 @@ import ReleaseTransformations._
 lazy val root = (project in file(".")).
   enablePlugins(SbtPlugin, ReleasePlugin, ScalafmtPlugin).
   settings(
-    name := "sbt-mwegrz",
-    organization := "com.github.mwegrz",
+    name := "sbt-michalstutzmann",
+    organization := "com.github.michalstutzmann",
     scalacOptions ++= Seq(
       "-encoding",
       "UTF-8",
       "-deprecation",
       "-unchecked"
     ),
-    scalaVersion := "2.12.10",
+    scalaVersion := "2.12.12",
     scalafmtCheck := true,
     scalafmtSbtCheck := true,
     libraryDependencies ++= Seq(
@@ -63,16 +63,16 @@ lazy val root = (project in file(".")).
     homepage := Some(url("http://github.com/mwegrz/sbt-mwegrz")),
     scmInfo := Some(
       ScmInfo(
-        url("https://github.com/mwegrz/sbt-mwegrz.git"),
-        "scm:git@github.com:mwegrz/sbt-mwegrz.git"
+        url("https://github.com/michalstutzmann/sbt-michalstutzmann.git"),
+        "scm:git@github.com:michalstutzmann/sbt-michalstutzmann.git"
       )
     ),
     developers := List(
       Developer(
-        id = "mwegrz",
-        name = "Michał Węgrzyn",
+        id = "michalstutzmann",
+        name = "Michał Stutzmann",
         email = null,
-        url = url("https://github.com/mwegrz")
+        url = url("https://github.com/michalstutzmann")
       )
     )
   )
